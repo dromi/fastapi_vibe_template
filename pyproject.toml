@@ -3,7 +3,7 @@ name = "fastapi-vibe-template"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "dromi",email = "danni@finechariot.com"}
+    {name = "dromi",email = "hello@finechariot.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.12"

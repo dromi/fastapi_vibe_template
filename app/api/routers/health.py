@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends
+from sqlalchemy import text 
 from sqlalchemy.orm import Session
 from app.api import deps
 
@@ -12,7 +13,7 @@ def health_service():
 def health_db(db: Session = Depends(deps.get_db)):
     try:
         # Simple query to check DB connection
-        db.execute("SELECT 1")
+        db.execute(text("SELECT 1"))
         return {"status": "ok"}
-    except Exception:
-        return {"status": "error"}
+    except Exception as e:
+        return {"status": "error", "detail": str(e)}

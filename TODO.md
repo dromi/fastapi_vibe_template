@@ -1,0 +1,2 @@
+ - what if we have no .env then we need varibales to be read fron env
+ - hot reload does not seem to work

@@ -21,7 +21,7 @@ RUN poetry install --no-root --no-interaction --no-ansi
 COPY app ./app
 
 # Copy example environment file as .env (for development/demo)
-COPY app/.env.example .env
+COPY app/.env .env
 
 EXPOSE 8000
 CMD ["poetry", "run", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

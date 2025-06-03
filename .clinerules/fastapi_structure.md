@@ -87,7 +87,6 @@ docker-compose.yml
   * **config.py:** Settings (typically Pydantic-based, loaded from `.env`).
   * **exceptions.py:** Custom exception classes and error handlers.
   * **security.py:** Authentication and security logic.
-  * **utils.py:** Miscellaneous helpers and utilities.
 
 * **jobs/**
   For cron jobs, scheduled/background tasks. Place scripts or task modules here.
